@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: white;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    height: 100px;
+    margin: 0 auto;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+}
+.left-nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: 10px;
+    width: 60%;
+}
+.left-nav ul li
+{
+    list-style: none;
+    display: inline;
+    margin: 0 15px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.nav-menu{
+    width: 90%;
+    justify-content: space-between;
+}
+.searchbar{
+    /* background: red; */
+    width: 500px;
+    line-height: 40px;
+    border-radius: 4px;
+    background: rgb(242, 240, 240);
+}
+.searchbar input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    width: 85%;
+}
+.right-nav, .searchbar i{
+    font-size: 15px;
+    color: gray;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.right-nav div{
+    margin: 0 10px;
+    text-align: center;
+}
+.right-nav div p{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(61, 61, 61);
+}
+.right-nav div i{
+    font-size: 18px;
+    color: rgb(61, 61, 61);
+}
+
+.left-nav i{
+    font-size: 20px;
+    background-color: rgb(231, 229, 229);
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+@media only screen and (max-width:700px){
+    .nav-menu{
+        display: none;
+    }
+    .left-nav i{
+        display: block;
+    }
+    img{
+        width: 40px;
+        margin-right: 10px;
+    }
+    header{
+        height: 60px;
+    }
+    .searchbar{
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: 0;
+        border-radius: 50px;
+        background: white;
+        border: 1px solid gray;
+    }
+    .right-nav div{
+        margin: 0 8px;
+    }
+    .right-nav div p{
+        font-size: 10px;
+    }
+} 
+
+@media only screen and (max-width:1300px){
+    .nav-menu{
+        display: none;
+    }
+    .left-nav i{
+        display: block;
+    }
+    .logo{
+        width: 40px;
+        margin-right: 10px;
+    }
+    header{
+        height: 60px;
+    }
+    .searchbar{
+        position: absolute;
+        top: 70px;
+        width: 90%;
+        left: 0;
+        border-radius: 50px;
+        background: white;
+        border: 1px solid gray;
+    }
+}
+.top{
+    
+    top: 100px;
+    left: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 100%; 
+}
+.top2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 90%;
+}
+.top3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
